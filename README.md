@@ -41,7 +41,7 @@ Frozen release-local leaderboard. **AUPR is the primary metric**; precision@K sa
 | SMR-DDI-Temporal `†` | 0.86529 | 0.55594 | 0.66384 | 0.03205 |
 | ExtraTrees | 0.9776 | 0.90192 | 0.9018 | 0.13776 |
 | HGB | 0.97810 | 0.90437 | 0.90384 | 0.14570 |
-| FT-Transformer | 0.97831 | 0.90448 | 0.90568 | 0.14387 |
+| FT-Transformer | 0.97831 | 0.90448 | **0.90568** | 0.14387 |
 | **NEST-DDI** | **0.97832** | **0.90520** | 0.90407 | **0.14870** |
 
 The recurrence gain over HGB is **small but consistent**: +0.00090 AUPR (95% CI 0.00062–0.00120) and +0.00022 AUROC on the frozen 2025Q1→2025Q2 test, replicated on the later 2025Q2→2025Q3 holdout at +0.00110 AUPR (95% CI 0.00081–0.00139). Paired uncertainty uses 300 stratified bootstrap resamples.
