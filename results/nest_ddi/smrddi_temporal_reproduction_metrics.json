@@ -1,0 +1,34 @@
+{
+  "model": "SMRDDI-Temporal",
+  "protocol": "SMILES 1-D CNN encoder + pair MLP; binary temporal adaptation of 2024 SMRDDI",
+  "tasks": {
+    "target_any_next_quarter": {
+      "train_rows": 620168,
+      "test_rows": 310084,
+      "metrics": {
+        "auroc": 0.8652926051167485,
+        "aupr": 0.5559406731908213,
+        "brier": 0.21318277716636658,
+        "n": 310084,
+        "positives": 39689,
+        "precision_at_100": 1.0,
+        "precision_at_500": 0.962,
+        "precision_at_1000": 0.943
+      }
+    },
+    "target_first_next_quarter": {
+      "train_rows": 534550,
+      "test_rows": 258267,
+      "metrics": {
+        "auroc": 0.6638352552212128,
+        "aupr": 0.03204571482758626,
+        "brier": 0.1686786413192749,
+        "n": 258267,
+        "positives": 4073,
+        "precision_at_100": 0.15,
+        "precision_at_500": 0.09,
+        "precision_at_1000": 0.074
+      }
+    }
+  }
+}

@@ -1,0 +1,200 @@
+{
+  "protocol": "train 2024q3+2024q4; test 2025q1->2025q2; identical risk sets to baseline_metrics.json",
+  "notes": {
+    "hawkes_basis_logistic": "discrete-time fixed exponential-basis proxy, not a continuous-time Hawkes likelihood",
+    "poisson_intensity_glm": "log-link event-intensity ranking baseline",
+    "temporal_heuristics": "test scores use history available at the cutoff only"
+  },
+  "any_next_quarter": {
+    "target": "target_any_next_quarter",
+    "at_risk_only": false,
+    "train_rows": 620168,
+    "test_rows": 310084,
+    "results": {
+      "edgebank_frequency": {
+        "auroc": 0.9382000765655444,
+        "aupr": 0.8488074779489263,
+        "brier": 0.18736502713959316,
+        "positive_rate": 0.12799434991808673,
+        "n": 310084,
+        "positives": 39689,
+        "precision_at_100": 1.0,
+        "precision_at_500": 1.0,
+        "precision_at_1000": 1.0
+      },
+      "temporal_recency": {
+        "auroc": 0.937565948844604,
+        "aupr": 0.8513241925959711,
+        "brier": 0.18751047177828142,
+        "positive_rate": 0.12799434991808673,
+        "n": 310084,
+        "positives": 39689,
+        "precision_at_100": 1.0,
+        "precision_at_500": 1.0,
+        "precision_at_1000": 1.0
+      },
+      "recency_popularity": {
+        "auroc": 0.9761864141176335,
+        "aupr": 0.8944416401559373,
+        "brier": 0.19112124901058927,
+        "positive_rate": 0.12799434991808673,
+        "n": 310084,
+        "positives": 39689,
+        "precision_at_100": 1.0,
+        "precision_at_500": 1.0,
+        "precision_at_1000": 1.0
+      },
+      "extra_trees_all_raw": {
+        "auroc": 0.9771600457448375,
+        "aupr": 0.9019181288750622,
+        "brier": 0.04404529290053866,
+        "positive_rate": 0.12799434991808673,
+        "n": 310084,
+        "positives": 39689,
+        "precision_at_100": 1.0,
+        "precision_at_500": 1.0,
+        "precision_at_1000": 1.0
+      },
+      "random_forest_all_raw": {
+        "auroc": 0.9768094348918153,
+        "aupr": 0.9008679285838077,
+        "brier": 0.03983406551206244,
+        "positive_rate": 0.12799434991808673,
+        "n": 310084,
+        "positives": 39689,
+        "precision_at_100": 1.0,
+        "precision_at_500": 0.998,
+        "precision_at_1000": 0.999
+      },
+      "hawkes_basis_logistic": {
+        "auroc": 0.9578662345636844,
+        "aupr": 0.882662642217249,
+        "brier": 0.06080817909907874,
+        "positive_rate": 0.12799434991808673,
+        "n": 310084,
+        "positives": 39689,
+        "precision_at_100": 1.0,
+        "precision_at_500": 1.0,
+        "precision_at_1000": 1.0
+      },
+      "poisson_intensity_glm": {
+        "auroc": 0.9507841157635465,
+        "aupr": 0.7923928439855004,
+        "brier": 0.07558131569362475,
+        "positive_rate": 0.12799434991808673,
+        "n": 310084,
+        "positives": 39689,
+        "precision_at_100": 1.0,
+        "precision_at_500": 1.0,
+        "precision_at_1000": 0.997
+      },
+      "mlp_all_raw": {
+        "auroc": 0.9772168436513772,
+        "aupr": 0.9008671434759498,
+        "brier": 0.034676266938655276,
+        "positive_rate": 0.12799434991808673,
+        "n": 310084,
+        "positives": 39689,
+        "precision_at_100": 1.0,
+        "precision_at_500": 1.0,
+        "precision_at_1000": 1.0
+      }
+    }
+  },
+  "first_next_quarter": {
+    "target": "target_first_next_quarter",
+    "at_risk_only": true,
+    "train_rows": 534550,
+    "test_rows": 258267,
+    "results": {
+      "edgebank_frequency": {
+        "auroc": 0.5,
+        "aupr": 0.015770501070597482,
+        "brier": 0.25000187492194864,
+        "positive_rate": 0.015770501070597482,
+        "n": 258267,
+        "positives": 4073,
+        "precision_at_100": 0.01,
+        "precision_at_500": 0.01,
+        "precision_at_1000": 0.012
+      },
+      "temporal_recency": {
+        "auroc": 0.5,
+        "aupr": 0.015770501070597482,
+        "brier": 0.25000187492194864,
+        "positive_rate": 0.015770501070597482,
+        "n": 258267,
+        "positives": 4073,
+        "precision_at_100": 0.01,
+        "precision_at_500": 0.01,
+        "precision_at_1000": 0.012
+      },
+      "recency_popularity": {
+        "auroc": 0.8962169316826458,
+        "aupr": 0.13253405880213742,
+        "brier": 0.25692935152495455,
+        "positive_rate": 0.015770501070597482,
+        "n": 258267,
+        "positives": 4073,
+        "precision_at_100": 0.33,
+        "precision_at_500": 0.25,
+        "precision_at_1000": 0.238
+      },
+      "extra_trees_all_raw": {
+        "auroc": 0.8953776140878738,
+        "aupr": 0.13775803954539018,
+        "brier": 0.023345218831352123,
+        "positive_rate": 0.015770501070597482,
+        "n": 258267,
+        "positives": 4073,
+        "precision_at_100": 0.33,
+        "precision_at_500": 0.262,
+        "precision_at_1000": 0.249
+      },
+      "random_forest_all_raw": {
+        "auroc": 0.8942965634443414,
+        "aupr": 0.12560191180381097,
+        "brier": 0.024889546348926758,
+        "positive_rate": 0.015770501070597482,
+        "n": 258267,
+        "positives": 4073,
+        "precision_at_100": 0.22,
+        "precision_at_500": 0.216,
+        "precision_at_1000": 0.213
+      },
+      "hawkes_basis_logistic": {
+        "auroc": 0.7291006168897514,
+        "aupr": 0.04321396571992321,
+        "brier": 0.15251832164563342,
+        "positive_rate": 0.015770501070597482,
+        "n": 258267,
+        "positives": 4073,
+        "precision_at_100": 0.06,
+        "precision_at_500": 0.072,
+        "precision_at_1000": 0.073
+      },
+      "poisson_intensity_glm": {
+        "auroc": 0.7545054656575036,
+        "aupr": 0.04585714845280886,
+        "brier": 0.01554127333345323,
+        "positive_rate": 0.015770501070597482,
+        "n": 258267,
+        "positives": 4073,
+        "precision_at_100": 0.03,
+        "precision_at_500": 0.068,
+        "precision_at_1000": 0.07
+      },
+      "mlp_all_raw": {
+        "auroc": 0.8978677289462973,
+        "aupr": 0.12529880704255023,
+        "brier": 0.014548959547495232,
+        "positive_rate": 0.015770501070597482,
+        "n": 258267,
+        "positives": 4073,
+        "precision_at_100": 0.27,
+        "precision_at_500": 0.216,
+        "precision_at_1000": 0.217
+      }
+    }
+  }
+}

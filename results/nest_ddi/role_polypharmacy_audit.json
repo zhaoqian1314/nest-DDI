@@ -1,0 +1,335 @@
+{
+  "role_combinations": {
+    "2024q3": {
+      "pilot_reports": 3381660,
+      "top_combinations": [
+        {
+          "role1": "SS",
+          "role2": "SS",
+          "reports": 1449780,
+          "share_of_pilot_reports": 0.42871844005606713
+        },
+        {
+          "role1": "C",
+          "role2": "C",
+          "reports": 1134279,
+          "share_of_pilot_reports": 0.3354207696811625
+        },
+        {
+          "role1": "SS",
+          "role2": "C",
+          "reports": 206128,
+          "share_of_pilot_reports": 0.06095467906294542
+        },
+        {
+          "role1": "C",
+          "role2": "SS",
+          "reports": 183077,
+          "share_of_pilot_reports": 0.05413820431385769
+        },
+        {
+          "role1": "PS",
+          "role2": "SS",
+          "reports": 61938,
+          "share_of_pilot_reports": 0.01831585670942673
+        },
+        {
+          "role1": "SS",
+          "role2": "PS",
+          "reports": 56000,
+          "share_of_pilot_reports": 0.01655991436158573
+        },
+        {
+          "role1": "PS",
+          "role2": "C",
+          "reports": 40195,
+          "share_of_pilot_reports": 0.011886174245784614
+        },
+        {
+          "role1": "C",
+          "role2": "PS",
+          "reports": 38110,
+          "share_of_pilot_reports": 0.011269613148572003
+        },
+        {
+          "role1": "PS;SS",
+          "role2": "SS",
+          "reports": 37637,
+          "share_of_pilot_reports": 0.011129741014767896
+        },
+        {
+          "role1": "SS",
+          "role2": "PS;SS",
+          "reports": 30956,
+          "share_of_pilot_reports": 0.009154084088879426
+        },
+        {
+          "role1": "PS;SS",
+          "role2": "C",
+          "reports": 25368,
+          "share_of_pilot_reports": 0.007501641205798336
+        },
+        {
+          "role1": "C",
+          "role2": "PS;SS",
+          "reports": 23117,
+          "share_of_pilot_reports": 0.006835991791013881
+        }
+      ]
+    },
+    "2024q4": {
+      "pilot_reports": 3873185,
+      "top_combinations": [
+        {
+          "role1": "SS",
+          "role2": "SS",
+          "reports": 1673894,
+          "share_of_pilot_reports": 0.43217507038780745
+        },
+        {
+          "role1": "C",
+          "role2": "C",
+          "reports": 1327952,
+          "share_of_pilot_reports": 0.34285788052984817
+        },
+        {
+          "role1": "SS",
+          "role2": "C",
+          "reports": 224849,
+          "share_of_pilot_reports": 0.05805273954123028
+        },
+        {
+          "role1": "C",
+          "role2": "SS",
+          "reports": 194912,
+          "share_of_pilot_reports": 0.05032344181855501
+        },
+        {
+          "role1": "PS",
+          "role2": "SS",
+          "reports": 66597,
+          "share_of_pilot_reports": 0.017194376204596476
+        },
+        {
+          "role1": "SS",
+          "role2": "PS",
+          "reports": 64460,
+          "share_of_pilot_reports": 0.016642633904654695
+        },
+        {
+          "role1": "PS;SS",
+          "role2": "SS",
+          "reports": 45296,
+          "share_of_pilot_reports": 0.011694768001012087
+        },
+        {
+          "role1": "PS",
+          "role2": "C",
+          "reports": 42708,
+          "share_of_pilot_reports": 0.011026584064536033
+        },
+        {
+          "role1": "C",
+          "role2": "PS",
+          "reports": 39442,
+          "share_of_pilot_reports": 0.01018335039508828
+        },
+        {
+          "role1": "SS",
+          "role2": "PS;SS",
+          "reports": 37443,
+          "share_of_pilot_reports": 0.009667237686813308
+        },
+        {
+          "role1": "PS;SS",
+          "role2": "C",
+          "reports": 26459,
+          "share_of_pilot_reports": 0.006831328738492997
+        },
+        {
+          "role1": "C",
+          "role2": "PS;SS",
+          "reports": 25415,
+          "share_of_pilot_reports": 0.0065617831319702
+        }
+      ]
+    },
+    "2025q1": {
+      "pilot_reports": 4068515,
+      "top_combinations": [
+        {
+          "role1": "C",
+          "role2": "C",
+          "reports": 1639006,
+          "share_of_pilot_reports": 0.4028511631393764
+        },
+        {
+          "role1": "SS",
+          "role2": "SS",
+          "reports": 1553283,
+          "share_of_pilot_reports": 0.3817813133293106
+        },
+        {
+          "role1": "SS",
+          "role2": "C",
+          "reports": 226052,
+          "share_of_pilot_reports": 0.055561304308820295
+        },
+        {
+          "role1": "C",
+          "role2": "SS",
+          "reports": 195231,
+          "share_of_pilot_reports": 0.047985813005482346
+        },
+        {
+          "role1": "PS",
+          "role2": "SS",
+          "reports": 62846,
+          "share_of_pilot_reports": 0.015446913677349107
+        },
+        {
+          "role1": "SS",
+          "role2": "PS",
+          "reports": 56503,
+          "share_of_pilot_reports": 0.01388786817794699
+        },
+        {
+          "role1": "PS",
+          "role2": "C",
+          "reports": 49139,
+          "share_of_pilot_reports": 0.012077871164294589
+        },
+        {
+          "role1": "C",
+          "role2": "PS",
+          "reports": 48887,
+          "share_of_pilot_reports": 0.012015932102990895
+        },
+        {
+          "role1": "SS",
+          "role2": "PS;SS",
+          "reports": 39183,
+          "share_of_pilot_reports": 0.009630786662947045
+        },
+        {
+          "role1": "PS;SS",
+          "role2": "SS",
+          "reports": 38602,
+          "share_of_pilot_reports": 0.009487982716052418
+        },
+        {
+          "role1": "PS;SS",
+          "role2": "C",
+          "reports": 31733,
+          "share_of_pilot_reports": 0.00779965171567513
+        },
+        {
+          "role1": "C",
+          "role2": "PS;SS",
+          "reports": 28768,
+          "share_of_pilot_reports": 0.007070884585653488
+        }
+      ]
+    },
+    "2025q2": {
+      "pilot_reports": 4219958,
+      "top_combinations": [
+        {
+          "role1": "C",
+          "role2": "C",
+          "reports": 1993029,
+          "share_of_pilot_reports": 0.47228645403579844
+        },
+        {
+          "role1": "SS",
+          "role2": "SS",
+          "reports": 1329200,
+          "share_of_pilot_reports": 0.31497943818398194
+        },
+        {
+          "role1": "C",
+          "role2": "SS",
+          "reports": 210238,
+          "share_of_pilot_reports": 0.049819927117758046
+        },
+        {
+          "role1": "SS",
+          "role2": "C",
+          "reports": 202688,
+          "share_of_pilot_reports": 0.04803080978531066
+        },
+        {
+          "role1": "PS",
+          "role2": "SS",
+          "reports": 66028,
+          "share_of_pilot_reports": 0.015646601222097472
+        },
+        {
+          "role1": "SS",
+          "role2": "PS",
+          "reports": 58356,
+          "share_of_pilot_reports": 0.013828573649311202
+        },
+        {
+          "role1": "C",
+          "role2": "PS",
+          "reports": 56186,
+          "share_of_pilot_reports": 0.01331435052197202
+        },
+        {
+          "role1": "PS",
+          "role2": "C",
+          "reports": 55528,
+          "share_of_pilot_reports": 0.013158424799488526
+        },
+        {
+          "role1": "PS;SS",
+          "role2": "SS",
+          "reports": 39604,
+          "share_of_pilot_reports": 0.00938492752771473
+        },
+        {
+          "role1": "SS",
+          "role2": "PS;SS",
+          "reports": 37104,
+          "share_of_pilot_reports": 0.008792504569950696
+        },
+        {
+          "role1": "C",
+          "role2": "PS;SS",
+          "reports": 32912,
+          "share_of_pilot_reports": 0.007799129754371963
+        },
+        {
+          "role1": "PS;SS",
+          "role2": "C",
+          "reports": 26346,
+          "share_of_pilot_reports": 0.006243190098100503
+        }
+      ]
+    }
+  },
+  "polypharmacy_cap": {
+    "2024q3": {
+      "mapped_pair_eligible_cases_before_cap": 79725,
+      "skipped_cases": 824,
+      "skipped_share": 0.010335528378802132
+    },
+    "2024q4": {
+      "mapped_pair_eligible_cases_before_cap": 85683,
+      "skipped_cases": 1086,
+      "skipped_share": 0.012674626238577081
+    },
+    "2025q1": {
+      "mapped_pair_eligible_cases_before_cap": 86613,
+      "skipped_cases": 1309,
+      "skipped_share": 0.015113204715227506
+    },
+    "2025q2": {
+      "mapped_pair_eligible_cases_before_cap": 93857,
+      "skipped_cases": 1226,
+      "skipped_share": 0.01306242475254909
+    }
+  },
+  "scope_note": "Role audit uses the restricted pair-event pilot, not an exposure-confirmed cohort."
+}

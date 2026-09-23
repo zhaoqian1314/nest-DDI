@@ -1,0 +1,103 @@
+{
+  "protocol": "release-local temporal graph; recent architecture reimplementations using available covariates",
+  "models": [
+    "gat_fusion",
+    "gin_fusion",
+    "edgeconv_fusion",
+    "graph_transformer_fusion"
+  ],
+  "tasks": {
+    "target_any_next_quarter": {
+      "train_rows": 620168,
+      "test_rows": 310084,
+      "results": {
+        "gat_fusion": {
+          "auroc": 0.97726560579075,
+          "aupr": 0.8973178558348913,
+          "brier": 0.05972447991371155,
+          "n": 310084,
+          "positives": 39689,
+          "precision_at_100": 1.0,
+          "precision_at_500": 1.0,
+          "precision_at_1000": 0.996
+        },
+        "gin_fusion": {
+          "auroc": 0.9776581684034966,
+          "aupr": 0.8976627534369478,
+          "brier": 0.06617140769958496,
+          "n": 310084,
+          "positives": 39689,
+          "precision_at_100": 0.98,
+          "precision_at_500": 0.996,
+          "precision_at_1000": 0.996
+        },
+        "edgeconv_fusion": {
+          "auroc": 0.9774558102913498,
+          "aupr": 0.896945266540564,
+          "brier": 0.06558443605899811,
+          "n": 310084,
+          "positives": 39689,
+          "precision_at_100": 0.99,
+          "precision_at_500": 0.996,
+          "precision_at_1000": 0.996
+        },
+        "graph_transformer_fusion": {
+          "auroc": 0.9773637535024593,
+          "aupr": 0.8973963867963091,
+          "brier": 0.06468158215284348,
+          "n": 310084,
+          "positives": 39689,
+          "precision_at_100": 1.0,
+          "precision_at_500": 0.998,
+          "precision_at_1000": 0.996
+        }
+      }
+    },
+    "target_first_next_quarter": {
+      "train_rows": 534550,
+      "test_rows": 258267,
+      "results": {
+        "gat_fusion": {
+          "auroc": 0.9045675328880587,
+          "aupr": 0.15139299397256856,
+          "brier": 0.11507806181907654,
+          "n": 258267,
+          "positives": 4073,
+          "precision_at_100": 0.32,
+          "precision_at_500": 0.304,
+          "precision_at_1000": 0.281
+        },
+        "gin_fusion": {
+          "auroc": 0.9044842002116804,
+          "aupr": 0.1517687139467016,
+          "brier": 0.12060799449682236,
+          "n": 258267,
+          "positives": 4073,
+          "precision_at_100": 0.35,
+          "precision_at_500": 0.308,
+          "precision_at_1000": 0.289
+        },
+        "edgeconv_fusion": {
+          "auroc": 0.9048788585783352,
+          "aupr": 0.15471469944695165,
+          "brier": 0.10485876351594925,
+          "n": 258267,
+          "positives": 4073,
+          "precision_at_100": 0.33,
+          "precision_at_500": 0.338,
+          "precision_at_1000": 0.289
+        },
+        "graph_transformer_fusion": {
+          "auroc": 0.9039193838933403,
+          "aupr": 0.15134439881048473,
+          "brier": 0.11859159171581268,
+          "n": 258267,
+          "positives": 4073,
+          "precision_at_100": 0.36,
+          "precision_at_500": 0.282,
+          "precision_at_1000": 0.27
+        }
+      }
+    }
+  }
+}

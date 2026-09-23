@@ -1,0 +1,13 @@
+{
+  "protocol": "historical graph built through 2025Q1; train q3+q4+q1; test q2->q3",
+  "test": {
+    "auroc": 0.9812003243587765,
+    "aupr": 0.9126234888774574,
+    "brier": 0.06071299687027931,
+    "n": 310084,
+    "positives": 40541,
+    "precision_at_100": 1.0,
+    "precision_at_500": 1.0,
+    "precision_at_1000": 1.0
+  }
+}

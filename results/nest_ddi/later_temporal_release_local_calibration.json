@@ -1,0 +1,116 @@
+{
+  "task": "later 2025Q3 recurrence, release-local case versions",
+  "definition": "in-sample holdout calibration diagnostic; it is not patient-risk or clinical calibration",
+  "baseline": {
+    "brier": 0.03333588710013473,
+    "ece_equal_frequency_10": 0.006878148693735882,
+    "bins": [
+      {
+        "n": 31009,
+        "mean_predicted": 0.0001304873465282592,
+        "observed_rate": 3.224870198974491e-05
+      },
+      {
+        "n": 31009,
+        "mean_predicted": 0.00031792269826232664,
+        "observed_rate": 0.00016124350994872457
+      },
+      {
+        "n": 31009,
+        "mean_predicted": 0.0006992460516007091,
+        "observed_rate": 0.0002579896159179593
+      },
+      {
+        "n": 31009,
+        "mean_predicted": 0.0015973064026277286,
+        "observed_rate": 0.0004837305298461737
+      },
+      {
+        "n": 31008,
+        "mean_predicted": 0.0036089599522290375,
+        "observed_rate": 0.002096233230134159
+      },
+      {
+        "n": 31008,
+        "mean_predicted": 0.008215875557718995,
+        "observed_rate": 0.00445046439628483
+      },
+      {
+        "n": 31008,
+        "mean_predicted": 0.02049139272271255,
+        "observed_rate": 0.013641640866873065
+      },
+      {
+        "n": 31008,
+        "mean_predicted": 0.06839086968249675,
+        "observed_rate": 0.05192208462332301
+      },
+      {
+        "n": 31008,
+        "mean_predicted": 0.3463900370707481,
+        "observed_rate": 0.32146542827657376
+      },
+      {
+        "n": 31008,
+        "mean_predicted": 0.9263769787078612,
+        "observed_rate": 0.9129256965944272
+      }
+    ]
+  },
+  "nest": {
+    "brier": 0.03300916037450897,
+    "ece_equal_frequency_10": 0.0034574593136048894,
+    "bins": [
+      {
+        "n": 31009,
+        "mean_predicted": 0.00010616221442522957,
+        "observed_rate": 3.224870198974491e-05
+      },
+      {
+        "n": 31009,
+        "mean_predicted": 0.00032991431419340794,
+        "observed_rate": 0.00012899480795897965
+      },
+      {
+        "n": 31009,
+        "mean_predicted": 0.0007062427162962285,
+        "observed_rate": 0.00029023831790770424
+      },
+      {
+        "n": 31009,
+        "mean_predicted": 0.0014874173826655633,
+        "observed_rate": 0.0005482279338256635
+      },
+      {
+        "n": 31008,
+        "mean_predicted": 0.003399179184725918,
+        "observed_rate": 0.0020639834881320948
+      },
+      {
+        "n": 31008,
+        "mean_predicted": 0.007794543846090851,
+        "observed_rate": 0.004579463364293086
+      },
+      {
+        "n": 31008,
+        "mean_predicted": 0.019033326626171933,
+        "observed_rate": 0.014189886480908152
+      },
+      {
+        "n": 31008,
+        "mean_predicted": 0.06168952235025921,
+        "observed_rate": 0.05059984520123839
+      },
+      {
+        "n": 31008,
+        "mean_predicted": 0.3258467301037035,
+        "observed_rate": 0.3206269349845201
+      },
+      {
+        "n": 31008,
+        "mean_predicted": 0.9216187061035486,
+        "observed_rate": 0.9143769349845201
+      }
+    ]
+  }
+}

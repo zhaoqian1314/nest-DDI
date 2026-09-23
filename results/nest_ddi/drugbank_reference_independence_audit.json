@@ -1,0 +1,10 @@
+{
+  "reference_file": "data/deepddi-master/data/DrugBank_known_ddi.txt",
+  "reference_type": "curated positive DDI labels; no report date or mechanism subtype retained in the bundled file",
+  "ddinter_drugs": 1939,
+  "ddinter_drugs_mapped_to_drugbank_by_normalized_name": 1197,
+  "ddinter_pairs": 160235,
+  "ddinter_pairs_mapped_to_drugbank": 93198,
+  "mapped_ddinter_pairs_present_as_drugbank_positive": 0,
+  "independence_assessment": "not suitable as an independent external or mechanistic validation because candidate-pool/source overlap and label timing/provenance cannot be excluded; use only as a descriptive concordance resource after an independently versioned reference is obtained"
+}

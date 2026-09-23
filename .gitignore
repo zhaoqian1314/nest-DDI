@@ -4,8 +4,6 @@ data/
 docs/data/
 
 # Derived row-level panels (rebuilt by the reconstruction contract)
-results/**/*.npz
-results/**/*.parquet
 results/**/*.csv
 !results/**/*_metrics.json
 

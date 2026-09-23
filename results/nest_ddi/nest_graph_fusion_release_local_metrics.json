@@ -1,0 +1,91 @@
+{
+  "protocol": "fixed 1:1 rank fusion; optimized NEST selected on prior validation fold; GraphSAGE trained on historical q3+q4 graph; frozen 2025Q1->2025Q2 test",
+  "fusion_weight_optimized_nest": 0.5,
+  "fusion_weight_graphsage": 0.5,
+  "fused": {
+    "aupr": 0.16406787419831162,
+    "auroc": 0.9096397649626962,
+    "precision_at_100": 0.35,
+    "precision_at_500": 0.332,
+    "precision_at_1000": 0.296
+  },
+  "triage_fused": {
+    "aupr": 0.16235898242345442,
+    "auroc": 0.9084618772810807,
+    "precision_at_100": 0.4,
+    "precision_at_500": 0.33,
+    "precision_at_1000": 0.296
+  },
+  "optimized_nest": {
+    "aupr": 0.14946519473386272,
+    "auroc": 0.9045381824041124,
+    "precision_at_100": 0.32,
+    "precision_at_500": 0.308,
+    "precision_at_1000": 0.271
+  },
+  "graphsage": {
+    "aupr": 0.15039400464518646,
+    "auroc": 0.90305809315716,
+    "precision_at_100": 0.35,
+    "precision_at_500": 0.302,
+    "precision_at_1000": 0.289
+  },
+  "bootstrap_vs_optimized_nest": {
+    "repeats": 300,
+    "delta_aupr": {
+      "mean": 0.01467814559065274,
+      "ci95": [
+        0.011028547738241645,
+        0.018498124497832353
+      ],
+      "p_improvement": 1.0
+    },
+    "delta_auroc": {
+      "mean": 0.00507183601333926,
+      "ci95": [
+        0.004127574204538356,
+        0.006049418913444232
+      ],
+      "p_improvement": 1.0
+    }
+  },
+  "bootstrap_vs_graphsage": {
+    "repeats": 300,
+    "delta_aupr": {
+      "mean": 0.013707744968638327,
+      "ci95": [
+        0.01035208349721014,
+        0.01698883503536636
+      ],
+      "p_improvement": 1.0
+    },
+    "delta_auroc": {
+      "mean": 0.006614219158842923,
+      "ci95": [
+        0.005615798437352113,
+        0.007546994384300942
+      ],
+      "p_improvement": 1.0
+    }
+  },
+  "triage_bootstrap_vs_graphsage": {
+    "repeats": 300,
+    "delta_aupr": {
+      "mean": 0.01200517430876323,
+      "ci95": [
+        0.00947436896474178,
+        0.014430083329090996
+      ],
+      "p_improvement": 1.0
+    },
+    "delta_auroc": {
+      "mean": 0.005423653772929608,
+      "ci95": [
+        0.004815400864075536,
+        0.005970814695409846
+      ],
+      "p_improvement": 1.0
+    }
+  },
+  "note": "Equal weights are fixed for this audit and are not selected from frozen test labels; this is a first-pair optimization, not a recurrence model claim."
+}

@@ -1,0 +1,45 @@
+{
+  "protocol": "2024Q3 train -> 2024Q4 validation only; frozen 2025Q1->2025Q2 labels are never read",
+  "candidates": [
+    {
+      "nest_weight": 0.25,
+      "metrics": {
+        "aupr": 0.19522976261358066,
+        "auroc": 0.9154940272430371,
+        "precision_at_100": 0.46,
+        "precision_at_500": 0.374,
+        "precision_at_1000": 0.339
+      }
+    },
+    {
+      "nest_weight": 0.5,
+      "metrics": {
+        "aupr": 0.20144184053337605,
+        "auroc": 0.9200204622278357,
+        "precision_at_100": 0.5,
+        "precision_at_500": 0.382,
+        "precision_at_1000": 0.347
+      }
+    },
+    {
+      "nest_weight": 0.75,
+      "metrics": {
+        "aupr": 0.2028248405828558,
+        "auroc": 0.9218005039935235,
+        "precision_at_100": 0.53,
+        "precision_at_500": 0.368,
+        "precision_at_1000": 0.356
+      }
+    }
+  ],
+  "selected": {
+    "nest_weight": 0.75,
+    "metrics": {
+      "aupr": 0.2028248405828558,
+      "auroc": 0.9218005039935235,
+      "precision_at_100": 0.53,
+      "precision_at_500": 0.368,
+      "precision_at_1000": 0.356
+    }
+  }
+}

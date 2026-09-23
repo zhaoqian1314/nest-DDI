@@ -1,0 +1,35 @@
+{
+  "model": "DRIFT-Temporal",
+  "checkpoint": "DeepChem/ChemBERTa-77M-MLM",
+  "protocol": "temporal FAERS panel; ChemBERTa embedding + Morgan fingerprint + pair MLP",
+  "tasks": {
+    "target_any_next_quarter": {
+      "train_rows": 620168,
+      "test_rows": 310084,
+      "metrics": {
+        "auroc": 0.871243971341855,
+        "aupr": 0.571416555374171,
+        "brier": 0.11296995729207993,
+        "n": 310084,
+        "positives": 39689,
+        "precision_at_100": 0.99,
+        "precision_at_500": 0.97,
+        "precision_at_1000": 0.946
+      }
+    },
+    "target_first_next_quarter": {
+      "train_rows": 534550,
+      "test_rows": 258267,
+      "metrics": {
+        "auroc": 0.7264859120642289,
+        "aupr": 0.041160079114638516,
+        "brier": 0.18050333857536316,
+        "n": 258267,
+        "positives": 4073,
+        "precision_at_100": 0.06,
+        "precision_at_500": 0.074,
+        "precision_at_1000": 0.071
+      }
+    }
+  }
+}

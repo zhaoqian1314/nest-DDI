@@ -1,0 +1,119 @@
+{
+  "protocol": "train 2024q3, choose model on 2024q4, refit train+validation, test once on 2025q1",
+  "features": [
+    "logdeg1",
+    "logdeg2",
+    "logdeg_min",
+    "logdeg_max",
+    "logdeg_product",
+    "tanimoto",
+    "pair_history_count",
+    "event_history_count",
+    "drug1_event_history_count",
+    "drug2_event_history_count"
+  ],
+  "validation": {
+    "logistic": {
+      "auroc": 0.7464124904087337,
+      "aupr_sampled": 0.21359321972092785,
+      "precision_at_100": 0.39,
+      "precision_at_500": 0.348,
+      "precision_at_1000": 0.335,
+      "precision_at_5000": 0.3248
+    },
+    "hgb_shallow": {
+      "auroc": 0.7960693235317364,
+      "aupr_sampled": 0.3045960513266711,
+      "precision_at_100": 0.7,
+      "precision_at_500": 0.704,
+      "precision_at_1000": 0.677,
+      "precision_at_5000": 0.6496
+    },
+    "hgb_deep": {
+      "auroc": 0.7956154453263559,
+      "aupr_sampled": 0.30462037082805665,
+      "precision_at_100": 0.73,
+      "precision_at_500": 0.716,
+      "precision_at_1000": 0.692,
+      "precision_at_5000": 0.6466
+    },
+    "xgboost": {
+      "auroc": 0.795956970250156,
+      "aupr_sampled": 0.30549758653579384,
+      "precision_at_100": 0.81,
+      "precision_at_500": 0.754,
+      "precision_at_1000": 0.719,
+      "precision_at_5000": 0.6482
+    }
+  },
+  "selected_by_validation_aupr_sampled": "xgboost",
+  "frozen_test": {
+    "xgboost": {
+      "auroc": 0.7938435438262955,
+      "aupr_sampled": 0.2980638770956728,
+      "precision_at_100": 0.72,
+      "precision_at_500": 0.65,
+      "precision_at_1000": 0.621,
+      "precision_at_5000": 0.6006
+    },
+    "hgb_full_feature": {
+      "auroc": 0.7927170243458433,
+      "aupr_sampled": 0.2958755062934062,
+      "precision_at_100": 0.78,
+      "precision_at_500": 0.694,
+      "precision_at_1000": 0.672,
+      "precision_at_5000": 0.6006
+    }
+  },
+  "sampling_audit": {
+    "2024q3": {
+      "fold": "2024q3",
+      "cutoff": "2024-09-30",
+      "horizon": "2024-12-31",
+      "event_vocabulary": 100,
+      "eligible_pairs": 54072,
+      "history_triplets_excluded": 1065304,
+      "first_future_positives": 382757,
+      "sampled_negatives": 3827570,
+      "full_cutoff_risk_set": 4341896,
+      "negative_sampling": "uniform from cutoff-defined pair x event risk set",
+      "seed": 42,
+      "negative_ratio_requested": 10,
+      "rows": 4210327,
+      "positive_rate_sampled": 0.09090909090909091
+    },
+    "2024q4": {
+      "fold": "2024q4",
+      "cutoff": "2024-12-31",
+      "horizon": "2025-03-31",
+      "event_vocabulary": 100,
+      "eligible_pairs": 78022,
+      "history_triplets_excluded": 1630678,
+      "first_future_positives": 298624,
+      "sampled_negatives": 2986240,
+      "full_cutoff_risk_set": 6171522,
+      "negative_sampling": "uniform from cutoff-defined pair x event risk set",
+      "seed": 42,
+      "negative_ratio_requested": 10,
+      "rows": 3284864,
+      "positive_rate_sampled": 0.09090909090909091
+    },
+    "2025q1": {
+      "fold": "2025q1",
+      "cutoff": "2025-03-31",
+      "horizon": "2025-06-30",
+      "event_vocabulary": 100,
+      "eligible_pairs": 95127,
+      "history_triplets_excluded": 2046018,
+      "first_future_positives": 232899,
+      "sampled_negatives": 2328990,
+      "full_cutoff_risk_set": 7466682,
+      "negative_sampling": "uniform from cutoff-defined pair x event risk set",
+      "seed": 42,
+      "negative_ratio_requested": 10,
+      "rows": 2561889,
+      "positive_rate_sampled": 0.09090909090909091
+    }
+  },
+  "warning": "AUPR is computed on the documented case-control sample. AUROC and Precision@K are the primary cross-fold ranking measures."
+}

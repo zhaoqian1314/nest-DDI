@@ -1,0 +1,61 @@
+{
+  "selection_rule": "all model identities and blend weights selected on 2024q4 validation only",
+  "validation_metrics": {
+    "raw_hgb31": {
+      "aupr": 0.22216128127437562,
+      "auroc": 0.9213378940378792,
+      "brier": 0.022160445724315535
+    },
+    "raw_hgb63": {
+      "aupr": 0.22662811698507246,
+      "auroc": 0.9216013538690897,
+      "brier": 0.021564602691666438
+    },
+    "eng_hgb31": {
+      "aupr": 0.2176846570233441,
+      "auroc": 0.9208157655717937,
+      "brier": 0.020063445584923394
+    },
+    "eng_hgb63": {
+      "aupr": 0.2172073804607559,
+      "auroc": 0.9206686076841747,
+      "brier": 0.01960181984686367
+    },
+    "raw_xgb": {
+      "aupr": 0.2260011091369126,
+      "auroc": 0.9205047199197113,
+      "brier": 0.12355118989944458
+    },
+    "eng_xgb": {
+      "aupr": 0.2081011255612713,
+      "auroc": 0.9173701954827094,
+      "brier": 0.09077751636505127
+    }
+  },
+  "selected": {
+    "validation_aupr": 0.22976310022008006,
+    "first": "raw_hgb63",
+    "second": "raw_xgb",
+    "mode": "rank",
+    "weight_first": 0.5499999999999999
+  },
+  "test_components": {
+    "raw_hgb63": {
+      "aupr": 0.1888817222832586,
+      "auroc": 0.9083296934508681,
+      "brier": 0.017527034218178236
+    },
+    "raw_xgb": {
+      "aupr": 0.19212398732985048,
+      "auroc": 0.9083566485489799,
+      "brier": 0.09878934174776077
+    }
+  },
+  "test_ensemble": {
+    "aupr": 0.1933167472710593,
+    "auroc": 0.909197116557818,
+    "brier": 0.3167983438792197
+  },
+  "test_rows": 259443,
+  "test_positives": 5154
+}

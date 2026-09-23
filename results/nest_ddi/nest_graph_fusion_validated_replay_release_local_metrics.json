@@ -1,0 +1,51 @@
+{
+  "protocol": "weight 0.75 selected on 2024Q4 validation; q3+q4 GraphSAGE test score reused from audited run; frozen 2025Q1->Q2 test",
+  "nest_weight": 0.75,
+  "graphsage_weight": 0.25,
+  "test": {
+    "aupr": 0.16144925760948464,
+    "auroc": 0.90851911543341,
+    "precision_at_100": 0.34,
+    "precision_at_500": 0.328,
+    "precision_at_1000": 0.293
+  },
+  "bootstrap_vs_nest": {
+    "repeats": 300,
+    "delta_aupr": {
+      "mean": 0.012410580014406954,
+      "ci95": [
+        0.010010279910178698,
+        0.014795002169800687
+      ],
+      "p_improvement": 1.0
+    },
+    "delta_auroc": {
+      "mean": 0.004024544508129223,
+      "ci95": [
+        0.003553941476513284,
+        0.004529581589488154
+      ],
+      "p_improvement": 1.0
+    }
+  },
+  "bootstrap_vs_graphsage": {
+    "repeats": 300,
+    "delta_aupr": {
+      "mean": 0.011015280525742807,
+      "ci95": [
+        0.0065011223091513805,
+        0.015145328356288583
+      ],
+      "p_improvement": 1.0
+    },
+    "delta_auroc": {
+      "mean": 0.005509413673560736,
+      "ci95": [
+        0.004061785414717958,
+        0.006856031436604801
+      ],
+      "p_improvement": 1.0
+    }
+  },
+  "note": "This replay does not refit GraphSAGE; it reuses the previously audited q3+q4 model output with the validation-selected weight."
+}

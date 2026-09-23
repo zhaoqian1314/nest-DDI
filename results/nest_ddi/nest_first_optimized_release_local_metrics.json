@@ -1,0 +1,26 @@
+{
+  "protocol": "select on 2024Q3->2024Q4 validation; evaluate once on frozen 2025Q1->2025Q2 test",
+  "feature_count": 42,
+  "candidate_count": 27,
+  "selected": {
+    "hgb_index": 1,
+    "xgb_index": 2,
+    "hgb_weight": 0.5,
+    "valid": {
+      "aupr": 0.19659962019988628,
+      "auroc": 0.9206593098422959,
+      "precision_at_100": 0.5
+    }
+  },
+  "test": {
+    "aupr": 0.1490510310254562,
+    "auroc": 0.9044794722604204,
+    "precision_at_100": 0.35
+  },
+  "baseline_nest_test": {
+    "aupr": 0.1478071612016273,
+    "auroc": 0.9037738475084676,
+    "precision_at_100": 0.3
+  },
+  "note": "Validation selection never reads frozen test labels; test score is retained only for the selected candidate."
+}

@@ -1,0 +1,41 @@
+{
+  "protocol": "paired stratified bootstrap on frozen 2025Q1->2025Q2 first-pair test; optimizer selected on prior fold",
+  "optimized_vs_original_nest": {
+    "repeats": 1000,
+    "delta_aupr": {
+      "mean": 0.0017025983669420267,
+      "ci95": [
+        0.0004205655441041657,
+        0.003096311617992464
+      ],
+      "p_improvement": 0.99
+    },
+    "delta_auroc": {
+      "mean": 0.0007659039515088469,
+      "ci95": [
+        0.0005170522390280985,
+        0.0010173611316828396
+      ],
+      "p_improvement": 1.0
+    }
+  },
+  "optimized_vs_hgb_reference": {
+    "repeats": 1000,
+    "delta_aupr": {
+      "mean": 0.003807823737336146,
+      "ci95": [
+        0.001137756531909029,
+        0.006637774705724087
+      ],
+      "p_improvement": 0.999
+    },
+    "delta_auroc": {
+      "mean": 0.000699124030496402,
+      "ci95": [
+        0.00012064271939417059,
+        0.0012860791795820585
+      ],
+      "p_improvement": 0.991
+    }
+  }
+}

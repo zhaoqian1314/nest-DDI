@@ -1,0 +1,227 @@
+{
+  "protocol": "train rolling folds 2024q3+2024q4; test 2025q1->2025q2",
+  "any_next_quarter": {
+    "target": "target_any_next_quarter",
+    "at_risk_only": false,
+    "train_rows": 620168,
+    "test_rows": 310084,
+    "results": {
+      "static_logistic": {
+        "auroc": 0.7714804156431532,
+        "aupr": 0.3408571862714967,
+        "brier": 0.19905959066972478,
+        "positive_rate": 0.12799434991808673,
+        "n": 310084,
+        "positives": 39689
+      },
+      "static_hist_gradient_boosting": {
+        "auroc": 0.8664809582199227,
+        "aupr": 0.5581772378772811,
+        "brier": 0.07997276683752526,
+        "positive_rate": 0.12799434991808673,
+        "n": 310084,
+        "positives": 39689
+      },
+      "static_xgboost": {
+        "auroc": 0.8764844529994072,
+        "aupr": 0.567632941899556,
+        "brier": 0.14076471328735352,
+        "positive_rate": 0.12799434991808673,
+        "n": 310084,
+        "positives": 39689
+      },
+      "history_logistic": {
+        "auroc": 0.9655259164123176,
+        "aupr": 0.8687433448245387,
+        "brier": 0.07332324074363669,
+        "positive_rate": 0.12799434991808673,
+        "n": 310084,
+        "positives": 39689
+      },
+      "history_hist_gradient_boosting": {
+        "auroc": 0.973861921831392,
+        "aupr": 0.888537648825347,
+        "brier": 0.03694017462679833,
+        "positive_rate": 0.12799434991808673,
+        "n": 310084,
+        "positives": 39689
+      },
+      "history_xgboost": {
+        "auroc": 0.9738023061998098,
+        "aupr": 0.8886829859863767,
+        "brier": 0.06595440953969955,
+        "positive_rate": 0.12799434991808673,
+        "n": 310084,
+        "positives": 39689
+      },
+      "static_history_logistic": {
+        "auroc": 0.9650833060306331,
+        "aupr": 0.8689311497777775,
+        "brier": 0.07403195100076253,
+        "positive_rate": 0.12799434991808673,
+        "n": 310084,
+        "positives": 39689
+      },
+      "static_history_hist_gradient_boosting": {
+        "auroc": 0.9750257039137404,
+        "aupr": 0.8921531551235633,
+        "brier": 0.036380702487229015,
+        "positive_rate": 0.12799434991808673,
+        "n": 310084,
+        "positives": 39689
+      },
+      "static_history_xgboost": {
+        "auroc": 0.9749865698790584,
+        "aupr": 0.8920489532483886,
+        "brier": 0.06691592931747437,
+        "positive_rate": 0.12799434991808673,
+        "n": 310084,
+        "positives": 39689
+      },
+      "all_raw_logistic": {
+        "auroc": 0.9700134539778169,
+        "aupr": 0.8775742676707898,
+        "brier": 0.0681490300840926,
+        "positive_rate": 0.12799434991808673,
+        "n": 310084,
+        "positives": 39689
+      },
+      "all_raw_hist_gradient_boosting": {
+        "auroc": 0.9748696177034286,
+        "aupr": 0.8917318319561427,
+        "brier": 0.03636889972284097,
+        "positive_rate": 0.12799434991808673,
+        "n": 310084,
+        "positives": 39689
+      },
+      "all_raw_xgboost": {
+        "auroc": 0.9746075924301532,
+        "aupr": 0.8912748388220354,
+        "brier": 0.0653119757771492,
+        "positive_rate": 0.12799434991808673,
+        "n": 310084,
+        "positives": 39689
+      },
+      "persistence_score": {
+        "auroc": 0.922560482130487,
+        "aupr": 0.8210050956540692,
+        "brier": 0.047249540540005595,
+        "positive_rate": 0.12799434991808673,
+        "n": 310084,
+        "positives": 39689
+      }
+    }
+  },
+  "first_next_quarter": {
+    "target": "target_first_next_quarter",
+    "at_risk_only": true,
+    "train_rows": 539302,
+    "test_rows": 259443,
+    "results": {
+      "static_logistic": {
+        "auroc": 0.6763067574050006,
+        "aupr": 0.03796937486076175,
+        "brier": 0.2208719777716598,
+        "positive_rate": 0.019865635226234666,
+        "n": 259443,
+        "positives": 5154
+      },
+      "static_hist_gradient_boosting": {
+        "auroc": 0.7486990822240601,
+        "aupr": 0.06278246253159245,
+        "brier": 0.019123552861180924,
+        "positive_rate": 0.019865635226234666,
+        "n": 259443,
+        "positives": 5154
+      },
+      "static_xgboost": {
+        "auroc": 0.7569209815298914,
+        "aupr": 0.06298042793706658,
+        "brier": 0.1682901531457901,
+        "positive_rate": 0.019865635226234666,
+        "n": 259443,
+        "positives": 5154
+      },
+      "history_logistic": {
+        "auroc": 0.8686435272003199,
+        "aupr": 0.11409334785372588,
+        "brier": 0.14794743162192284,
+        "positive_rate": 0.019865635226234666,
+        "n": 259443,
+        "positives": 5154
+      },
+      "history_hist_gradient_boosting": {
+        "auroc": 0.9023381601755609,
+        "aupr": 0.16887293653114166,
+        "brier": 0.017839057357981088,
+        "positive_rate": 0.019865635226234666,
+        "n": 259443,
+        "positives": 5154
+      },
+      "history_xgboost": {
+        "auroc": 0.9004600141669173,
+        "aupr": 0.1704536937400315,
+        "brier": 0.09344173222780228,
+        "positive_rate": 0.019865635226234666,
+        "n": 259443,
+        "positives": 5154
+      },
+      "static_history_logistic": {
+        "auroc": 0.870807620809736,
+        "aupr": 0.12473662745485374,
+        "brier": 0.14828549602933372,
+        "positive_rate": 0.019865635226234666,
+        "n": 259443,
+        "positives": 5154
+      },
+      "static_history_hist_gradient_boosting": {
+        "auroc": 0.9096367580039757,
+        "aupr": 0.1919728935648639,
+        "brier": 0.017543930324822064,
+        "positive_rate": 0.019865635226234666,
+        "n": 259443,
+        "positives": 5154
+      },
+      "static_history_xgboost": {
+        "auroc": 0.9068907287957022,
+        "aupr": 0.19022314975725102,
+        "brier": 0.09283497184515,
+        "positive_rate": 0.019865635226234666,
+        "n": 259443,
+        "positives": 5154
+      },
+      "all_raw_logistic": {
+        "auroc": 0.8884171065736389,
+        "aupr": 0.15341801203673117,
+        "brier": 0.12426948180101108,
+        "positive_rate": 0.019865635226234666,
+        "n": 259443,
+        "positives": 5154
+      },
+      "all_raw_hist_gradient_boosting": {
+        "auroc": 0.9095110325288074,
+        "aupr": 0.19259186796539193,
+        "brier": 0.017480790092609808,
+        "positive_rate": 0.019865635226234666,
+        "n": 259443,
+        "positives": 5154
+      },
+      "all_raw_xgboost": {
+        "auroc": 0.9073915217475058,
+        "aupr": 0.19181347184281727,
+        "brier": 0.09429919719696045,
+        "positive_rate": 0.019865635226234666,
+        "n": 259443,
+        "positives": 5154
+      },
+      "persistence_score": {
+        "auroc": 0.5,
+        "aupr": 0.019865635226234666,
+        "brier": 0.019865635226234666,
+        "positive_rate": 0.019865635226234666,
+        "n": 259443,
+        "positives": 5154
+      }
+    }
+  }
+}

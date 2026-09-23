@@ -1,0 +1,54 @@
+{
+  "task": "later 2025Q3 recurrence, release-local case versions",
+  "definition": "positive pairs among the first N ranked candidates; no utility or clinical value is implied",
+  "capacities": [
+    {
+      "review_capacity": 1000,
+      "baseline_hits": 1000,
+      "nest_hits": 1000,
+      "incremental_hits": 0,
+      "baseline_precision": 1.0,
+      "nest_precision": 1.0
+    },
+    {
+      "review_capacity": 2000,
+      "baseline_hits": 2000,
+      "nest_hits": 2000,
+      "incremental_hits": 0,
+      "baseline_precision": 1.0,
+      "nest_precision": 1.0
+    },
+    {
+      "review_capacity": 5000,
+      "baseline_hits": 4999,
+      "nest_hits": 5000,
+      "incremental_hits": 1,
+      "baseline_precision": 0.9998,
+      "nest_precision": 1.0
+    },
+    {
+      "review_capacity": 10000,
+      "baseline_hits": 9998,
+      "nest_hits": 9999,
+      "incremental_hits": 1,
+      "baseline_precision": 0.9998,
+      "nest_precision": 0.9999
+    },
+    {
+      "review_capacity": 20000,
+      "baseline_hits": 19697,
+      "nest_hits": 19724,
+      "incremental_hits": 27,
+      "baseline_precision": 0.98485,
+      "nest_precision": 0.9862
+    },
+    {
+      "review_capacity": 50000,
+      "baseline_hits": 36303,
+      "nest_hits": 36362,
+      "incremental_hits": 59,
+      "baseline_precision": 0.72606,
+      "nest_precision": 0.72724
+    }
+  ]
+}

@@ -1,0 +1,205 @@
+{
+  "task": "prospective recurrence of historically observed pair--MedDRA triplets",
+  "candidate_rule": "triplets with at least three historical pair-event reports",
+  "warning": "This is a pharmacovigilance signal-ranking task, not clinical incidence or causal DDI confirmation.",
+  "folds": {
+    "2024q3": {
+      "cutoff": "2024-09-30",
+      "horizon": "2024-12-31",
+      "results": {
+        "historical_count": {
+          "auroc": 0.6958106184909784,
+          "aupr": 0.9061740096608207,
+          "n": 335876,
+          "positives": 275937,
+          "positive_rate": 0.8215442603818076,
+          "precision_at_100": 1.0,
+          "precision_at_500": 0.998,
+          "precision_at_1000": 0.999
+        },
+        "omega": {
+          "auroc": 0.3434989810342039,
+          "aupr": 0.7626802720360853,
+          "n": 335876,
+          "positives": 275937,
+          "positive_rate": 0.8215442603818076,
+          "precision_at_100": 0.79,
+          "precision_at_500": 0.792,
+          "precision_at_1000": 0.822
+        },
+        "omega025": {
+          "auroc": 0.40968791864130666,
+          "aupr": 0.7966009334449986,
+          "n": 335876,
+          "positives": 275937,
+          "positive_rate": 0.8215442603818076,
+          "precision_at_100": 0.86,
+          "precision_at_500": 0.8,
+          "precision_at_1000": 0.83
+        },
+        "additive_risk_difference": {
+          "auroc": 0.34307466656944763,
+          "aupr": 0.7432808331275452,
+          "n": 335876,
+          "positives": 275937,
+          "positive_rate": 0.8215442603818076,
+          "precision_at_100": 0.43,
+          "precision_at_500": 0.49,
+          "precision_at_1000": 0.456
+        },
+        "multiplicative_interaction": {
+          "auroc": 0.2823973408409297,
+          "aupr": 0.7241328035137963,
+          "n": 335876,
+          "positives": 275937,
+          "positive_rate": 0.8215442603818076,
+          "precision_at_100": 0.39,
+          "precision_at_500": 0.518,
+          "precision_at_1000": 0.56
+        },
+        "combination_risk_ratio": {
+          "auroc": 0.31379479744146416,
+          "aupr": 0.7330292771671789,
+          "n": 335876,
+          "positives": 275937,
+          "positive_rate": 0.8215442603818076,
+          "precision_at_100": 0.34,
+          "precision_at_500": 0.374,
+          "precision_at_1000": 0.405
+        }
+      }
+    },
+    "2024q4": {
+      "cutoff": "2024-12-31",
+      "horizon": "2025-03-31",
+      "results": {
+        "historical_count": {
+          "auroc": 0.7158655862733653,
+          "aupr": 0.8840360094205809,
+          "n": 637111,
+          "positives": 480754,
+          "positive_rate": 0.7545843659895999,
+          "precision_at_100": 1.0,
+          "precision_at_500": 1.0,
+          "precision_at_1000": 1.0
+        },
+        "omega": {
+          "auroc": 0.3764525987239947,
+          "aupr": 0.7037992222639543,
+          "n": 637111,
+          "positives": 480754,
+          "positive_rate": 0.7545843659895999,
+          "precision_at_100": 1.0,
+          "precision_at_500": 0.98,
+          "precision_at_1000": 0.965
+        },
+        "omega025": {
+          "auroc": 0.44493474579029824,
+          "aupr": 0.7477424141150053,
+          "n": 637111,
+          "positives": 480754,
+          "positive_rate": 0.7545843659895999,
+          "precision_at_100": 1.0,
+          "precision_at_500": 0.986,
+          "precision_at_1000": 0.98
+        },
+        "additive_risk_difference": {
+          "auroc": 0.3780055777222504,
+          "aupr": 0.6823507204901096,
+          "n": 637111,
+          "positives": 480754,
+          "positive_rate": 0.7545843659895999,
+          "precision_at_100": 0.19,
+          "precision_at_500": 0.28,
+          "precision_at_1000": 0.278
+        },
+        "multiplicative_interaction": {
+          "auroc": 0.32843525334139645,
+          "aupr": 0.6550232915741603,
+          "n": 637111,
+          "positives": 480754,
+          "positive_rate": 0.7545843659895999,
+          "precision_at_100": 0.32,
+          "precision_at_500": 0.32,
+          "precision_at_1000": 0.375
+        },
+        "combination_risk_ratio": {
+          "auroc": 0.3548597505529949,
+          "aupr": 0.6690634844221267,
+          "n": 637111,
+          "positives": 480754,
+          "positive_rate": 0.7545843659895999,
+          "precision_at_100": 0.3,
+          "precision_at_500": 0.338,
+          "precision_at_1000": 0.363
+        }
+      }
+    },
+    "2025q1": {
+      "cutoff": "2025-03-31",
+      "horizon": "2025-06-30",
+      "results": {
+        "historical_count": {
+          "auroc": 0.7198250305625873,
+          "aupr": 0.8547504891397336,
+          "n": 944902,
+          "positives": 661954,
+          "positive_rate": 0.7005530732287581,
+          "precision_at_100": 1.0,
+          "precision_at_500": 1.0,
+          "precision_at_1000": 1.0
+        },
+        "omega": {
+          "auroc": 0.37348424289857945,
+          "aupr": 0.6368889029519619,
+          "n": 944902,
+          "positives": 661954,
+          "positive_rate": 0.7005530732287581,
+          "precision_at_100": 1.0,
+          "precision_at_500": 0.788,
+          "precision_at_1000": 0.767
+        },
+        "omega025": {
+          "auroc": 0.44459709543798914,
+          "aupr": 0.6846358627563045,
+          "n": 944902,
+          "positives": 661954,
+          "positive_rate": 0.7005530732287581,
+          "precision_at_100": 1.0,
+          "precision_at_500": 0.85,
+          "precision_at_1000": 0.803
+        },
+        "additive_risk_difference": {
+          "auroc": 0.3750825350550888,
+          "aupr": 0.6195136619964321,
+          "n": 944902,
+          "positives": 661954,
+          "positive_rate": 0.7005530732287581,
+          "precision_at_100": 0.21,
+          "precision_at_500": 0.282,
+          "precision_at_1000": 0.34
+        },
+        "multiplicative_interaction": {
+          "auroc": 0.3373182486121155,
+          "aupr": 0.5966294947229285,
+          "n": 944902,
+          "positives": 661954,
+          "positive_rate": 0.7005530732287581,
+          "precision_at_100": 0.33,
+          "precision_at_500": 0.37,
+          "precision_at_1000": 0.372
+        },
+        "combination_risk_ratio": {
+          "auroc": 0.3549451864384941,
+          "aupr": 0.6063936925340295,
+          "n": 944902,
+          "positives": 661954,
+          "positive_rate": 0.7005530732287581,
+          "precision_at_100": 0.39,
+          "precision_at_500": 0.34,
+          "precision_at_1000": 0.333
+        }
+      }
+    }
+  }
+}

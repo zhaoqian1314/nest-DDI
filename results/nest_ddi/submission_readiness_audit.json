@@ -1,0 +1,13 @@
+{
+  "manuscript_exists": true,
+  "pdf_exists": true,
+  "manifest_entries": 88,
+  "manifest_missing_files": [],
+  "highlights_bullet_count": 5,
+  "graphical_abstract_svg_valid": true,
+  "cover_letter_consistent": true,
+  "manuscript_archive_placeholders": [],
+  "external_archive_required": true,
+  "local_submission_ready": true,
+  "note": "Local readiness does not imply that a public repository, license or DOI exists."
+}

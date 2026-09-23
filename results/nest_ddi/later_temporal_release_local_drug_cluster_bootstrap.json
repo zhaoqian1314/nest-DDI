@@ -1,0 +1,23 @@
+{
+  "task": "later 2025Q3 recurrence, release-local case versions",
+  "block_definition": "canonical first drug identifier in unordered pair",
+  "unique_drug_blocks": 1915,
+  "repeats": 300,
+  "delta_aupr": {
+    "mean": 0.0010941672805525572,
+    "ci95": [
+      0.0007863924652078885,
+      0.0014681430610049672
+    ],
+    "p_improvement": 1.0
+  },
+  "delta_auroc": {
+    "mean": 0.00020286365643352474,
+    "ci95": [
+      0.00011378200988547416,
+      0.0002939646202614276
+    ],
+    "p_improvement": 1.0
+  },
+  "limitation": "one-way drug-block resampling addresses shared-drug dependence only partially"
+}

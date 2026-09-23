@@ -1,0 +1,389 @@
+{
+  "protocol": "frozen release-local leaderboard; no metric or split changes",
+  "tasks": {
+    "any_next_quarter": {
+      "HGB": {
+        "aupr": 0.904372709238961,
+        "auroc": 0.9780953918510088,
+        "precision_at_100": 1.0,
+        "precision_at_500": 1.0,
+        "precision_at_1000": 1.0
+      },
+      "NEST-DDI": {
+        "aupr": 0.9052554298407925,
+        "auroc": 0.9783237177328662,
+        "precision_at_100": 1.0,
+        "precision_at_500": 1.0,
+        "precision_at_1000": 1.0
+      },
+      "deepddi_dnn": {
+        "auroc": 0.9771662250972036,
+        "aupr": 0.8993050227256969,
+        "brier": 0.060528501868247986,
+        "n": 310084,
+        "positives": 39689,
+        "precision_at_100": 1.0,
+        "precision_at_500": 1.0,
+        "precision_at_1000": 1.0
+      },
+      "residual_mlp": {
+        "auroc": 0.9758013114084084,
+        "aupr": 0.895646569922248,
+        "brier": 0.0537286102771759,
+        "n": 310084,
+        "positives": 39689,
+        "precision_at_100": 1.0,
+        "precision_at_500": 1.0,
+        "precision_at_1000": 1.0
+      },
+      "wide_deep": {
+        "auroc": 0.9772983820298813,
+        "aupr": 0.9011858600688425,
+        "brier": 0.0617905855178833,
+        "n": 310084,
+        "positives": 39689,
+        "precision_at_100": 1.0,
+        "precision_at_500": 1.0,
+        "precision_at_1000": 1.0
+      },
+      "deepfm": {
+        "auroc": 0.9773866752516693,
+        "aupr": 0.8999991650668939,
+        "brier": 0.05993065983057022,
+        "n": 310084,
+        "positives": 39689,
+        "precision_at_100": 1.0,
+        "precision_at_500": 1.0,
+        "precision_at_1000": 1.0
+      },
+      "ft_transformer": {
+        "auroc": 0.978314657431593,
+        "aupr": 0.9044816388987076,
+        "brier": 0.07413393259048462,
+        "n": 310084,
+        "positives": 39689,
+        "precision_at_100": 1.0,
+        "precision_at_500": 1.0,
+        "precision_at_1000": 1.0
+      },
+      "cnn1d": {
+        "auroc": 0.977813791546756,
+        "aupr": 0.9029113279357981,
+        "brier": 0.06543795019388199,
+        "n": 310084,
+        "positives": 39689,
+        "precision_at_100": 1.0,
+        "precision_at_500": 0.998,
+        "precision_at_1000": 0.999
+      },
+      "gcn": {
+        "auroc": 0.9621296273621622,
+        "aupr": 0.8278541600412115,
+        "brier": 0.07532376050949097,
+        "n": 310084,
+        "positives": 39689,
+        "precision_at_100": 1.0,
+        "precision_at_500": 1.0,
+        "precision_at_1000": 1.0
+      },
+      "gcn_fusion": {
+        "auroc": 0.9780084913712874,
+        "aupr": 0.9022134682999735,
+        "brier": 0.06392939388751984,
+        "n": 310084,
+        "positives": 39689,
+        "precision_at_100": 1.0,
+        "precision_at_500": 1.0,
+        "precision_at_1000": 1.0
+      },
+      "sage_fusion": {
+        "auroc": 0.9780163303384511,
+        "aupr": 0.9021856984762464,
+        "brier": 0.06114330515265465,
+        "n": 310084,
+        "positives": 39689,
+        "precision_at_100": 1.0,
+        "precision_at_500": 1.0,
+        "precision_at_1000": 1.0
+      },
+      "2026-gat_fusion": {
+        "auroc": 0.97726560579075,
+        "aupr": 0.8973178558348913,
+        "brier": 0.05972447991371155,
+        "n": 310084,
+        "positives": 39689,
+        "precision_at_100": 1.0,
+        "precision_at_500": 1.0,
+        "precision_at_1000": 0.996
+      },
+      "2026-gin_fusion": {
+        "auroc": 0.9776581684034966,
+        "aupr": 0.8976627534369478,
+        "brier": 0.06617140769958496,
+        "n": 310084,
+        "positives": 39689,
+        "precision_at_100": 0.98,
+        "precision_at_500": 0.996,
+        "precision_at_1000": 0.996
+      },
+      "2026-edgeconv_fusion": {
+        "auroc": 0.9774558102913498,
+        "aupr": 0.896945266540564,
+        "brier": 0.06558443605899811,
+        "n": 310084,
+        "positives": 39689,
+        "precision_at_100": 0.99,
+        "precision_at_500": 0.996,
+        "precision_at_1000": 0.996
+      },
+      "2026-graph_transformer_fusion": {
+        "auroc": 0.9773637535024593,
+        "aupr": 0.8973963867963091,
+        "brier": 0.06468158215284348,
+        "n": 310084,
+        "positives": 39689,
+        "precision_at_100": 1.0,
+        "precision_at_500": 0.998,
+        "precision_at_1000": 0.996
+      }
+    },
+    "first_next_quarter": {
+      "HGB": {
+        "aupr": 0.14570289747401013,
+        "auroc": 0.9038407245963639,
+        "precision_at_100": 0.32,
+        "precision_at_500": 0.292,
+        "precision_at_1000": 0.262
+      },
+      "NEST-DDI": {
+        "aupr": 0.1478071612016273,
+        "auroc": 0.9037738475084676,
+        "precision_at_100": 0.3,
+        "precision_at_500": 0.3,
+        "precision_at_1000": 0.277
+      },
+      "deepddi_dnn": {
+        "auroc": 0.901040964184787,
+        "aupr": 0.12990417729185155,
+        "brier": 0.1147521510720253,
+        "n": 258267,
+        "positives": 4073,
+        "precision_at_100": 0.28,
+        "precision_at_500": 0.232,
+        "precision_at_1000": 0.219
+      },
+      "residual_mlp": {
+        "auroc": 0.9001656919453449,
+        "aupr": 0.14083305413795605,
+        "brier": 0.09927991032600403,
+        "n": 258267,
+        "positives": 4073,
+        "precision_at_100": 0.32,
+        "precision_at_500": 0.27,
+        "precision_at_1000": 0.273
+      },
+      "wide_deep": {
+        "auroc": 0.9019138637557363,
+        "aupr": 0.13452738636571024,
+        "brier": 0.12399662286043167,
+        "n": 258267,
+        "positives": 4073,
+        "precision_at_100": 0.29,
+        "precision_at_500": 0.26,
+        "precision_at_1000": 0.241
+      },
+      "deepfm": {
+        "auroc": 0.9058758999510342,
+        "aupr": 0.14052552975132654,
+        "brier": 0.12137067317962646,
+        "n": 258267,
+        "positives": 4073,
+        "precision_at_100": 0.23,
+        "precision_at_500": 0.25,
+        "precision_at_1000": 0.253
+      },
+      "ft_transformer": {
+        "auroc": 0.9056849351503097,
+        "aupr": 0.14387368367134892,
+        "brier": 0.14875192940235138,
+        "n": 258267,
+        "positives": 4073,
+        "precision_at_100": 0.28,
+        "precision_at_500": 0.296,
+        "precision_at_1000": 0.277
+      },
+      "cnn1d": {
+        "auroc": 0.903002683403551,
+        "aupr": 0.14296542307812796,
+        "brier": 0.10233651101589203,
+        "n": 258267,
+        "positives": 4073,
+        "precision_at_100": 0.33,
+        "precision_at_500": 0.298,
+        "precision_at_1000": 0.258
+      },
+      "gcn": {
+        "auroc": 0.9005962093351834,
+        "aupr": 0.14490971568892813,
+        "brier": 0.1189819946885109,
+        "n": 258267,
+        "positives": 4073,
+        "precision_at_100": 0.27,
+        "precision_at_500": 0.284,
+        "precision_at_1000": 0.275
+      },
+      "gcn_fusion": {
+        "auroc": 0.9039370149499906,
+        "aupr": 0.14770107978891234,
+        "brier": 0.11242420226335526,
+        "n": 258267,
+        "positives": 4073,
+        "precision_at_100": 0.29,
+        "precision_at_500": 0.338,
+        "precision_at_1000": 0.273
+      },
+      "sage_fusion": {
+        "auroc": 0.9030580917083497,
+        "aupr": 0.15039389338933717,
+        "brier": 0.10606817901134491,
+        "n": 258267,
+        "positives": 4073,
+        "precision_at_100": 0.35,
+        "precision_at_500": 0.302,
+        "precision_at_1000": 0.289
+      },
+      "2026-gat_fusion": {
+        "auroc": 0.9045675328880587,
+        "aupr": 0.15139299397256856,
+        "brier": 0.11507806181907654,
+        "n": 258267,
+        "positives": 4073,
+        "precision_at_100": 0.32,
+        "precision_at_500": 0.304,
+        "precision_at_1000": 0.281
+      },
+      "2026-gin_fusion": {
+        "auroc": 0.9044842002116804,
+        "aupr": 0.1517687139467016,
+        "brier": 0.12060799449682236,
+        "n": 258267,
+        "positives": 4073,
+        "precision_at_100": 0.35,
+        "precision_at_500": 0.308,
+        "precision_at_1000": 0.289
+      },
+      "2026-edgeconv_fusion": {
+        "auroc": 0.9048788585783352,
+        "aupr": 0.15471469944695165,
+        "brier": 0.10485876351594925,
+        "n": 258267,
+        "positives": 4073,
+        "precision_at_100": 0.33,
+        "precision_at_500": 0.338,
+        "precision_at_1000": 0.289
+      },
+      "2026-graph_transformer_fusion": {
+        "auroc": 0.9039193838933403,
+        "aupr": 0.15134439881048473,
+        "brier": 0.11859159171581268,
+        "n": 258267,
+        "positives": 4073,
+        "precision_at_100": 0.36,
+        "precision_at_500": 0.282,
+        "precision_at_1000": 0.27
+      },
+      "NEST optimized": {
+        "aupr": 0.14946519473386272,
+        "auroc": 0.9045381824041124,
+        "precision_at_100": 0.32,
+        "precision_at_500": 0.308,
+        "precision_at_1000": 0.271
+      },
+      "NEST-GraphSAGE fixed fusion": {
+        "aupr": 0.16406787419831162,
+        "auroc": 0.9096397649626962,
+        "precision_at_100": 0.35,
+        "precision_at_500": 0.332,
+        "precision_at_1000": 0.296
+      },
+      "NEST-GraphSAGE triage fusion": {
+        "aupr": 0.16235898242345442,
+        "auroc": 0.9084618772810807,
+        "precision_at_100": 0.4,
+        "precision_at_500": 0.33,
+        "precision_at_1000": 0.296
+      },
+      "NEST-GraphSAGE validated replay": {
+        "aupr": 0.16144925760948464,
+        "auroc": 0.90851911543341,
+        "precision_at_100": 0.34,
+        "precision_at_500": 0.328,
+        "precision_at_1000": 0.293
+      }
+    }
+  },
+  "interpretation": {
+    "any_next_quarter": {
+      "aupr": {
+        "best_value": 0.9052554298407925,
+        "winners": [
+          "NEST-DDI"
+        ],
+        "strict_unique_winner": true
+      },
+      "auroc": {
+        "best_value": 0.9783237177328662,
+        "winners": [
+          "NEST-DDI"
+        ],
+        "strict_unique_winner": true
+      },
+      "precision_at_100": {
+        "best_value": 1.0,
+        "winners": [
+          "HGB",
+          "NEST-DDI",
+          "deepddi_dnn",
+          "residual_mlp",
+          "wide_deep",
+          "deepfm",
+          "ft_transformer",
+          "cnn1d",
+          "gcn",
+          "gcn_fusion",
+          "sage_fusion",
+          "2026-gat_fusion",
+          "2026-graph_transformer_fusion"
+        ],
+        "strict_unique_winner": false
+      }
+    },
+    "first_next_quarter": {
+      "aupr": {
+        "best_value": 0.16406787419831162,
+        "winners": [
+          "NEST-GraphSAGE fixed fusion"
+        ],
+        "strict_unique_winner": true
+      },
+      "auroc": {
+        "best_value": 0.9096397649626962,
+        "winners": [
+          "NEST-GraphSAGE fixed fusion"
+        ],
+        "strict_unique_winner": true
+      },
+      "precision_at_100": {
+        "best_value": 0.4,
+        "winners": [
+          "NEST-GraphSAGE triage fusion"
+        ],
+        "strict_unique_winner": true
+      }
+    },
+    "summary": {
+      "recurrence": "NEST-DDI is the strict leader for AUPR and AUROC; P@100 is tied at 1.0.",
+      "first_pair": "NEST-GraphSAGE fixed fusion is the strict leader for AUPR and AUROC; the triage-weighted fusion is the strict leader for P@100 (0.40)."
+    }
+  }
+}

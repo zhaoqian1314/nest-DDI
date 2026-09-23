@@ -1,0 +1,107 @@
+{
+  "task": "later 2025Q3 recurrence, cutoff-available dominant report role",
+  "role_construction": "most frequent unordered DRUG role combination from 2024Q3--2025Q2; no exposure, dose, indication or perpetrator-victim inference",
+  "role_labelled_pairs": 55890,
+  "strata": [
+    {
+      "dominant_role": "NO_HISTORICAL_ROLE",
+      "pairs": 254194,
+      "positives": 3221,
+      "positive_rate": 0.012671424187825048,
+      "baseline_aupr": 0.12317816259707284,
+      "nest_aupr": 0.12814575580653886,
+      "baseline_auroc": 0.9126358746375683,
+      "nest_auroc": 0.9133495768835899
+    },
+    {
+      "dominant_role": "C|C",
+      "pairs": 35954,
+      "positives": 25399,
+      "positive_rate": 0.7064304388941425,
+      "baseline_aupr": 0.957037915620356,
+      "nest_aupr": 0.9575321603248969,
+      "baseline_auroc": 0.8930983138666336,
+      "nest_auroc": 0.8940395028178318
+    },
+    {
+      "dominant_role": "SS|SS",
+      "pairs": 7708,
+      "positives": 5289,
+      "positive_rate": 0.6861702127659575,
+      "baseline_aupr": 0.9567655041266533,
+      "nest_aupr": 0.9572854091061791,
+      "baseline_auroc": 0.9021653042799211,
+      "nest_auroc": 0.9031883546865502
+    },
+    {
+      "dominant_role": "C|SS",
+      "pairs": 6479,
+      "positives": 3819,
+      "positive_rate": 0.5894428152492669,
+      "baseline_aupr": 0.9034156055084006,
+      "nest_aupr": 0.9047156492783062,
+      "baseline_auroc": 0.851124078853851,
+      "nest_auroc": 0.852523590988469
+    },
+    {
+      "dominant_role": "C|PS",
+      "pairs": 2711,
+      "positives": 1393,
+      "positive_rate": 0.5138325341202509,
+      "baseline_aupr": 0.833204617490291,
+      "nest_aupr": 0.8375864291085957,
+      "baseline_auroc": 0.7971910277596523,
+      "nest_auroc": 0.802721607168729
+    },
+    {
+      "dominant_role": "C|PS;SS",
+      "pairs": 1173,
+      "positives": 541,
+      "positive_rate": 0.46121057118499575,
+      "baseline_aupr": 0.8154711789805802,
+      "nest_aupr": 0.8141679968420888,
+      "baseline_auroc": 0.8106939797374764,
+      "nest_auroc": 0.8077692505673975
+    },
+    {
+      "dominant_role": "PS|SS",
+      "pairs": 984,
+      "positives": 497,
+      "positive_rate": 0.5050813008130082,
+      "baseline_aupr": 0.8577929753248087,
+      "nest_aupr": 0.8604350459048719,
+      "baseline_auroc": 0.8236689128611505,
+      "nest_auroc": 0.8287176859927532
+    },
+    {
+      "dominant_role": "C|I",
+      "pairs": 202,
+      "positives": 73,
+      "positive_rate": 0.3613861386138614,
+      "baseline_aupr": 0.6563722917279453,
+      "nest_aupr": 0.6349977617066039,
+      "baseline_auroc": 0.7674418604651163,
+      "nest_auroc": 0.7613889773813316
+    },
+    {
+      "dominant_role": "I|I",
+      "pairs": 188,
+      "positives": 95,
+      "positive_rate": 0.5053191489361702,
+      "baseline_aupr": 0.8319776729945383,
+      "nest_aupr": 0.8212678682929657,
+      "baseline_auroc": 0.8105263157894738,
+      "nest_auroc": 0.7987549518958688
+    },
+    {
+      "dominant_role": "PS;SS|SS",
+      "pairs": 183,
+      "positives": 66,
+      "positive_rate": 0.36065573770491804,
+      "baseline_aupr": 0.7454740481244301,
+      "nest_aupr": 0.7175272997787321,
+      "baseline_auroc": 0.8106708106708106,
+      "nest_auroc": 0.7931882931882932
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "protocol": "train on 2024q3+2024q4; frozen test on 2025q1->2025q2; standardization fit on training folds only",
+  "features": [
+    "logdeg1",
+    "logdeg2",
+    "logdeg_min",
+    "logdeg_max",
+    "logdeg_product",
+    "tanimoto",
+    "pair_total",
+    "pair_active_days",
+    "pair_days_since",
+    "pair_recent_7",
+    "pair_decay_7",
+    "pair_recent_30",
+    "pair_decay_30",
+    "pair_recent_90",
+    "pair_decay_90",
+    "drug1_total",
+    "drug1_partners",
+    "drug1_days_since",
+    "drug2_total",
+    "drug2_partners",
+    "drug2_days_since",
+    "drug1_recent_7",
+    "drug1_decay_7",
+    "drug2_recent_7",
+    "drug2_decay_7",
+    "drug1_recent_30",
+    "drug1_decay_30",
+    "drug2_recent_30",
+    "drug2_decay_30",
+    "drug1_recent_90",
+    "drug1_decay_90",
+    "drug2_recent_90",
+    "drug2_decay_90",
+    "cross_excitation_7",
+    "activity_asymmetry_7",
+    "pair_share_7",
+    "cross_excitation_30",
+    "activity_asymmetry_30",
+    "pair_share_30",
+    "cross_excitation_90",
+    "activity_asymmetry_90",
+    "pair_share_90"
+  ],
+  "models": [
+    "ft_transformer"
+  ],
+  "epochs": 8,
+  "batch_size": 4096,
+  "device": "cuda",
+  "tasks": {
+    "target_any_next_quarter": {
+      "target": "target_any_next_quarter",
+      "train_rows": 620168,
+      "test_rows": 310084,
+      "results": {
+        "ft_transformer": {
+          "auroc": 0.9782318562064788,
+          "aupr": 0.903955804180861,
+          "brier": 0.06308455020189285,
+          "n": 310084,
+          "positives": 39689,
+          "precision_at_100": 1.0,
+          "precision_at_500": 1.0,
+          "precision_at_1000": 1.0
+        }
+      }
+    },
+    "target_first_next_quarter": {
+      "target": "target_first_next_quarter",
+      "train_rows": 534550,
+      "test_rows": 258267,
+      "results": {
+        "ft_transformer": {
+          "auroc": 0.9063848916730551,
+          "aupr": 0.14665344373432865,
+          "brier": 0.119966521859169,
+          "n": 258267,
+          "positives": 4073,
+          "precision_at_100": 0.34,
+          "precision_at_500": 0.284,
+          "precision_at_1000": 0.259
+        }
+      }
+    }
+  }
+}

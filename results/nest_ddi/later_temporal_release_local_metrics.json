@@ -1,0 +1,43 @@
+{
+  "task": "any previously observed pair reported in 2025Q3",
+  "train_folds": [
+    "2024q3",
+    "2024q4",
+    "2025q1"
+  ],
+  "test_fold": "2025q2",
+  "test_positive_rate": 0.1307419924923569,
+  "baseline": {
+    "aupr": 0.9117382676360343,
+    "auroc": 0.9806467772685303,
+    "precision_at_100": 1.0,
+    "precision_at_500": 1.0,
+    "precision_at_1000": 1.0
+  },
+  "nest": {
+    "aupr": 0.9128491985299657,
+    "auroc": 0.9808556180435787,
+    "precision_at_100": 1.0,
+    "precision_at_500": 1.0,
+    "precision_at_1000": 1.0
+  },
+  "paired_bootstrap": {
+    "repeats": 300,
+    "delta_aupr": {
+      "mean": 0.0010998873892190959,
+      "ci95": [
+        0.0008057392935041624,
+        0.0013897633647172363
+      ],
+      "p_improvement": 1.0
+    },
+    "delta_auroc": {
+      "mean": 0.00020630926386916142,
+      "ci95": [
+        0.0001262284524908619,
+        0.00028659551194836483
+      ],
+      "p_improvement": 1.0
+    }
+  }
+}

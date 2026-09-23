@@ -1,0 +1,111 @@
+{
+  "cutoff": "20250630",
+  "reference": "openFDA drug label endpoint, drug_interactions field",
+  "design": "Top-K post-hoc descriptive concordance; no label absence is treated as negative and no model was selected with this reference",
+  "matching": "case-insensitive exact partner-name boundary within a cutoff-dated interaction section",
+  "limitations": [
+    "openFDA is a current service and does not supply a historical snapshot of all labels",
+    "generic-name matching misses synonyms, classes and combination products",
+    "an explicit label mention is not a patient-level or causal validation"
+  ],
+  "results": [
+    {
+      "ranker": "hgb",
+      "top_k": 300,
+      "pairs_with_label_source": 300,
+      "explicit_label_mentions": 31,
+      "mention_rate_among_source_available": 0.10333333333333333,
+      "examples": [
+        {
+          "drug1": "Prednisone",
+          "drug2": "Hydrocortisone"
+        },
+        {
+          "drug1": "Prednisone",
+          "drug2": "Dexamethasone"
+        },
+        {
+          "drug1": "Methotrexate",
+          "drug2": "Folic acid"
+        },
+        {
+          "drug1": "Omeprazole",
+          "drug2": "Tacrolimus"
+        },
+        {
+          "drug1": "Omeprazole",
+          "drug2": "Cyclosporine"
+        },
+        {
+          "drug1": "Prednisone",
+          "drug2": "Tacrolimus"
+        },
+        {
+          "drug1": "Prednisone",
+          "drug2": "Cyclosporine"
+        },
+        {
+          "drug1": "Dexamethasone",
+          "drug2": "Hydrocortisone"
+        },
+        {
+          "drug1": "Acetaminophen",
+          "drug2": "Epinephrine"
+        },
+        {
+          "drug1": "Acetaminophen",
+          "drug2": "Dexamethasone"
+        }
+      ]
+    },
+    {
+      "ranker": "nest",
+      "top_k": 300,
+      "pairs_with_label_source": 300,
+      "explicit_label_mentions": 27,
+      "mention_rate_among_source_available": 0.09,
+      "examples": [
+        {
+          "drug1": "Mycophenolic acid",
+          "drug2": "Omeprazole"
+        },
+        {
+          "drug1": "Prednisone",
+          "drug2": "Warfarin"
+        },
+        {
+          "drug1": "Methotrexate",
+          "drug2": "Furosemide"
+        },
+        {
+          "drug1": "Methotrexate",
+          "drug2": "Cyanocobalamin"
+        },
+        {
+          "drug1": "Naproxen",
+          "drug2": "Omeprazole"
+        },
+        {
+          "drug1": "Methotrexate",
+          "drug2": "Ondansetron"
+        },
+        {
+          "drug1": "Methotrexate",
+          "drug2": "Famotidine"
+        },
+        {
+          "drug1": "Prednisone",
+          "drug2": "Erythromycin"
+        },
+        {
+          "drug1": "Lidocaine",
+          "drug2": "Dexamethasone"
+        },
+        {
+          "drug1": "Vancomycin",
+          "drug2": "Cyclosporine"
+        }
+      ]
+    }
+  ]
+}
