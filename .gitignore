@@ -1,0 +1,41 @@
+# ---- Raw and derived data: never redistributed ----
+# FAERS/AEMS quarterly ASCII releases are obtained from the FDA under their own terms.
+data/
+docs/data/
+
+# Derived row-level panels (rebuilt by the reconstruction contract)
+results/**/*.npz
+results/**/*.parquet
+results/**/*.csv
+!results/**/*_metrics.json
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# ---- LaTeX build products ----
+latex/**/build*/
+latex/**/tectonic[-_]cache*/
+*.aux
+*.log
+*.out
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+*.bbl
+*.blg
+
+# ---- Figures (high-resolution renderings are regenerated) ----
+figures/*.tiff
+figures/*.eps
+
+# ---- Scratch ----
+logs/
+tmp/
+release/
+.DS_Store
+Thumbs.db

@@ -1,0 +1,17 @@
+name: ddi-temporal-obspu
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12.4
+  - pytorch=2.5.1
+  - scikit-learn=1.9.0
+  - pandas=2.2.2
+  - numpy=1.26.4
+  - rdkit=2025.03.3
+  - scipy
+  - pip
+
+# DGL is intentionally omitted from the core environment. The released
+# temporal scripts use the local PyTorch molecular graph implementation;
+# the original DGL/SumGNN launcher requires a platform-specific GraphBolt
+# binary and is not part of the reproducibility contract.
